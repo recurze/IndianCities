@@ -1,8 +1,0 @@
-Official:
-https://censusindia.gov.in/pca/pcadata/pca.html
-https://www.censusindia.gov.in/2011-prov-results/paper2/data_files/India2/Table_2_PR_Cities_1Lakh_and_Above.pdf
-
-Unofficial:
-https://latlong.net
-https://villageinfo.in/
-https://wikipedia.org/
