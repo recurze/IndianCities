@@ -1,8 +1,24 @@
 # IndianCities
+
 This repository shall contain a dataset with information on population, location
 and area of the main cities of India. The cities included in this dataset all
 have a population of 1Lakh (100k) or more. It also includes these information on
-all the districts of India.
+all the districts and states/UTs of India.
+
+## Directory structure
+
+All the initial data tables and intermediary csvs are stored in the `data/`
+directory. Scripts used to scrape the web for information, and to clean and
+process the data are stored in the `scripts/` directory. The root directory
+consists of `final_*.csv`s which hold population, location and area information
+of cities, districts or states. It also contains a `IndianCities.py` which is
+the main module to assist in usage of the data collected.
+
+## Python module
+
+The main file `IndianCities.py` contains `cities()`, `districts()` and
+`states()` function which read the respective csvs to return a
+[panda dataframe][df] of the data stored in them.
 
 ## Data Sources
 
@@ -24,5 +40,6 @@ all the districts of India.
 
 
 
+[df]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html
 [census]: https://censusindia.gov.in/pca/pcadata/pca.html
 [1lcities_pdf]: https://www.censusindia.gov.in/2011-prov-results/paper2/data_files/India2/Table_2_PR_Cities_1Lakh_and_Above.pdf
